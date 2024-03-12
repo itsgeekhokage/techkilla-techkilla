@@ -39,7 +39,7 @@ export default function AboutPage() {
         <div className={styles.imageDiv}>
           <img
             className={styles.imageOne}
-            src="/../assets/about/bgf.png"
+            src="/src/assets/about/bgf.png"
           />
         </div>
         <div className={styles.meetupInfo}>
@@ -79,7 +79,7 @@ export default function AboutPage() {
         <div className={styles.imageMainContainer}>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src="/../assets/about/cards/Cards-01.png" />
+              <img src="/src/assets/about/cards/Cards-01.png" />
             </span>
             <span className={styles.heading}>
               <h1>Corporate Events</h1>
@@ -87,7 +87,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src="/../assets/about/cards/Cards-04.png" />
+              <img src="/src/assets/about/cards/Cards-04.png" />
             </span>
             <span className={styles.heading}>
               <h1>Experiential Events</h1>
@@ -95,7 +95,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src="/../assets/about/cards/Cards-05.png" />
+              <img src="/src/assets/about/cards/Cards-05.png" />
             </span>
             <span className={styles.heading}>
               <h1>Curate & Manage IP's</h1>
@@ -103,7 +103,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src="/../assets/about/cards/Cards-03.png" />
+              <img src="/src/assets/about/cards/Cards-03.png" />
             </span>
             <span className={styles.heading}>
               <h1>Virtual/Hybird Events</h1>
@@ -111,7 +111,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src="/../assets/about/cards/Cards-02.png" />
+              <img src="/src/assets/about/cards/Cards-02.png" />
             </span>
             <span className={styles.heading}>
               <h1>Musical Tours</h1>
