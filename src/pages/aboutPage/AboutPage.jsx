@@ -3,6 +3,12 @@
 import React, { useState } from "react";
 import styles from "./aboutPage.module.css";
 import list from "./peoplelovesection";
+import card1 from "../../assets/about/cards/Cards-01.png"
+import card2 from "../../assets/about/cards/Cards-02.png"
+import card3 from "../../assets/about/cards/Cards-03.png"
+import card4 from "../../assets/about/cards/Cards-04.png"
+import card5 from "../../assets/about/cards/Cards-05.png"
+import card6 from "../../assets/about/cards/Cards-06.png"
 
 const PeopleCard = ({ item }) => {
   let [hover, setHover] = useState(false);
@@ -79,7 +85,7 @@ export default function AboutPage() {
         <div className={styles.imageMainContainer}>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src="/src/assets/about/cards/Cards-01.png" />
+              <img src={card1} />
             </span>
             <span className={styles.heading}>
               <h1>Corporate Events</h1>
@@ -87,7 +93,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src="/src/assets/about/cards/Cards-04.png" />
+              <img src={card4} />
             </span>
             <span className={styles.heading}>
               <h1>Experiential Events</h1>
@@ -95,7 +101,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src="/src/assets/about/cards/Cards-05.png" />
+              <img src={card5}/>
             </span>
             <span className={styles.heading}>
               <h1>Curate & Manage IP's</h1>
@@ -103,7 +109,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src="/src/assets/about/cards/Cards-03.png" />
+              <img src={card3} />
             </span>
             <span className={styles.heading}>
               <h1>Virtual/Hybird Events</h1>
@@ -111,7 +117,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src="/src/assets/about/cards/Cards-02.png" />
+              <img src={card2}/>
             </span>
             <span className={styles.heading}>
               <h1>Musical Tours</h1>
