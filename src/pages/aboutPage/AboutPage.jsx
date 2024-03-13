@@ -3,11 +3,12 @@
 import React, { useState } from "react";
 import styles from "./aboutPage.module.css";
 import list from "./peoplelovesection";
-import card1 from "../../assets/about/cards/Cards-01.png"
-import card2 from "../../assets/about/cards/Cards-02.png"
-import card3 from "../../assets/about/cards/Cards-03.png"
-import card4 from "../../assets/about/cards/Cards-04.png"
-import card5 from "../../assets/about/cards/Cards-05.png"
+import card1 from "../../assets/about/cards/Cards-01.png";
+import card2 from "../../assets/about/cards/Cards-02.png";
+import card3 from "../../assets/about/cards/Cards-03.png";
+import card4 from "../../assets/about/cards/Cards-04.png";
+import card5 from "../../assets/about/cards/Cards-05.png";
+import imageOne from "../../assets/about/bgf.png";
 
 const PeopleCard = ({ item }) => {
   let [hover, setHover] = useState(false);
@@ -44,7 +45,7 @@ export default function AboutPage() {
         <div className={styles.imageDiv}>
           <img
             className={styles.imageOne}
-            src="/src/assets/about/bgf.png"
+            src={imageOne}
           />
         </div>
         <div className={styles.meetupInfo}>
@@ -100,7 +101,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src={card5}/>
+              <img src={card5} />
             </span>
             <span className={styles.heading}>
               <h1>Curate & Manage IP's</h1>
@@ -116,7 +117,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src={card2}/>
+              <img src={card2} />
             </span>
             <span className={styles.heading}>
               <h1>Musical Tours</h1>
