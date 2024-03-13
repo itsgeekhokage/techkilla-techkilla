@@ -1,8 +1,9 @@
+import tailorblackImg from "../../assets/about/tailoiredconceptualisation.png";
 const list = [
     {
         title: "Tailored Conceptualisation",
         description: "",
-        blackimg: "/src/assets/about/tailoiredconceptualisation.png",
+        blackimg: tailorblackImg,
         colorimg: "/src/assets/about/icon17.png"
     },
     {

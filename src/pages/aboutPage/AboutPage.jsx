@@ -8,7 +8,6 @@ import card2 from "../../assets/about/cards/Cards-02.png"
 import card3 from "../../assets/about/cards/Cards-03.png"
 import card4 from "../../assets/about/cards/Cards-04.png"
 import card5 from "../../assets/about/cards/Cards-05.png"
-import card6 from "../../assets/about/cards/Cards-06.png"
 
 const PeopleCard = ({ item }) => {
   let [hover, setHover] = useState(false);
