@@ -230,3 +230,67 @@
     border-radius: 0%;
   }
 }
+
+@media screen and (max-width: 630px) {
+  .aboutHero {
+    width: 100% !important;
+    height: 150px;
+  }
+  .aboutMainContent {
+    flex-direction: column-reverse;
+    padding: 0;
+    width: 100%;
+    padding-top: 3rem;
+    background: none;
+    gap: 2rem;
+    .meetupInfo {
+      width: 100%;
+      padding: 1rem;
+      background-color: #feffffd1;
+      .mainHeading {
+        font-size: 2rem;
+      }
+      p {
+        background-color: #feffffd1;
+      }
+    }
+    .imageDiv {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .imageOne {
+        height: 300px;
+      }
+    }
+  }
+  .peopleLove {
+    flex-direction: column;
+    margin-top: 4rem;
+    .peopleLoveHeading {
+      width: 100vw;
+      p {
+        width: 90vw;
+      }
+      .impactSecondRow {
+        width: 100%;
+      }
+    }
+    .peopleLoveItem {
+      width: 100%;
+      margin-bottom: 20px;
+      .peopleLoveSectionIcon {
+        padding: 0 10px;
+        width: 100px;
+      }
+    }
+  }
+  .imageMainContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    .spanContainer {
+      width: 100%;
+      height: 250px;
+    }
+  }
+}

@@ -56,7 +56,7 @@
       font-size: 1.5rem;
     }
     .logoContainer {
-      width: 35vw;
+      width: 35vw !important;
     }
   }
 }
