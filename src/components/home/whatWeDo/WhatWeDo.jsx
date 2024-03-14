@@ -31,7 +31,7 @@ export default function WhatWeDo() {
                   />
                 </div>
                 <div className={styles.content}>
-                  <h3>{item.title}</h3>
+                  <h3 className={styles.contentHeading}>{item.title}</h3>
                   <p>{item.description}</p>
                 </div>
               </div>

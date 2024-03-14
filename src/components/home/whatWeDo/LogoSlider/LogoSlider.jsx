@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import styles from "./LogoSlider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -45,7 +45,7 @@ export default function LogoSlider() {
           }}
           // pagination={{ clickable: true }}
           // minwidth
-          /* breakpoints={{
+          breakpoints={{
             576: {
               slidesPerView: 3,
               spaceBetween: 50,
@@ -67,7 +67,7 @@ export default function LogoSlider() {
                 rotate: 50,
               },
             },
-          }} */
+          }}
           spaceBetween={0}
           slidesPerView={5}
           className={styles.swiper}>
