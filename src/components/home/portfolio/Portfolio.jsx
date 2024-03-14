@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import styles from "./portfolio.module.css";
 import { portfolio } from "../../../data/home/portfolio";
 import { Swiper, SwiperSlide } from "swiper/react";

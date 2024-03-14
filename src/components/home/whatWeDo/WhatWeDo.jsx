@@ -1,15 +1,11 @@
 /** @format */
 
-import React, { useRef } from "react";
 import styles from "./whatWeDo.module.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // import "swiper/css/pagination";
 import LogoSlider from "./LogoSlider/LogoSlider";
 import { whatWeDoArr } from "../../../data/home/WhatWeDo";
 
 export default function WhatWeDo() {
-  const swiperRef = useRef();
 
   return (
     <section className={styles.WhatWeDo}>

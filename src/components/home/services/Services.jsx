@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
 import styles from "./services.module.css";
 import { services } from "../../../data/home/services";
 
