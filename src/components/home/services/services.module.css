@@ -80,10 +80,18 @@
   .Services {
     h1 {
       font-size: 2rem;
+      margin-left: 10px;
     }
     p {
       font-size: 0.8rem;
-      padding: 10px;
+      padding: 15px;
+    }
+    .paraContainer {
+      /* width: 100px; */
+      p {
+        font-size: 0.8rem !important;
+        font-weight: 600 !important;
+      }
     }
   }
 }

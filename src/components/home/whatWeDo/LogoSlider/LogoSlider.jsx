@@ -46,7 +46,7 @@ export default function LogoSlider() {
           // pagination={{ clickable: true }}
           // minwidth
           breakpoints={{
-            576: {
+            300: {
               slidesPerView: 3,
               spaceBetween: 50,
               coverflowEffect: {
@@ -54,14 +54,14 @@ export default function LogoSlider() {
               },
             },
             768: {
-              slidesPerView: 3,
+              slidesPerView: 4,
               spaceBetween: 50,
               coverflowEffect: {
                 rotate: 40,
               },
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 5,
               spaceBetween: 90,
               coverflowEffect: {
                 rotate: 50,
@@ -69,7 +69,6 @@ export default function LogoSlider() {
             },
           }}
           spaceBetween={0}
-          slidesPerView={5}
           className={styles.swiper}>
           {logosArr?.map((logo) => (
             <SwiperSlide
