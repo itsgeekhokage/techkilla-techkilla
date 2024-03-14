@@ -10,9 +10,11 @@ import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import "../whatWeDo/LogoSlider/pagination.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Portfolio() {
   const swiperRef = useRef(null);
+  const navigate = useNavigate();
 
   const navigateLeft = () => {
     if (swiperRef.current) {
@@ -26,6 +28,14 @@ export default function Portfolio() {
     }
   };
 
+  const handleProjectClick = (item) => {
+    const data = {
+      title : item.title,
+      images : item.img
+    }
+    navigate("/project", {state : data});
+  }
+
   return (
     <div className={styles.Portfolio}>
       <h1>
@@ -38,7 +48,7 @@ export default function Portfolio() {
             <div
               className={styles[item.class]}
               key={index}>
-              <div className={styles.imgContainer}>
+              <div className={styles.imgContainer} onClick={()=>handleProjectClick(item)}>
                 <button
                   className={styles.navigationButton}
                   onClick={navigateLeft}>

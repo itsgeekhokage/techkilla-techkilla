@@ -35,7 +35,6 @@
 
 .top,
 .bottom {
-  height: 90vh;
   width: 100%;
   border-radius: 8px;
   padding: 7%;
@@ -124,7 +123,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 1000px) {
   .Portfolio {
     width: auto;
     h1 {
@@ -145,12 +144,8 @@ button:hover {
           flex-direction: column;
           height: auto;
           .imgContainer {
-            height: 270px;
             width: 100%;
             .swipeImgContainer {
-              img {
-                height: 270px;
-              }
               object-fit: contain;
             }
           }
@@ -163,6 +158,22 @@ button:hover {
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .imgContainer {
+    height: 320px;
+    .swiper {
+      height: 320px !important;
+    }
+    .swipeImgContainer {
+      object-fit: contain !important;
+      object-position: bottom !important;
+    }
+    img {
+      height: 100%;
     }
   }
 }
