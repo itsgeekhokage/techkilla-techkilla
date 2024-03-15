@@ -49,7 +49,9 @@ export default function AboutPage() {
       <SimpleBackdrop />
       <div className={styles.hero}>
         <div className={styles.aboutHero}>
-          <div className={styles.heroImage}>
+          <div
+            className={styles.heroImage}
+            data-aos="zoom-out-up">
             <h1 className={styles.heroHeading}>About Us</h1>
           </div>
         </div>
