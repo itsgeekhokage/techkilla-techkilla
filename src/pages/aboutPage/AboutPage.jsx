@@ -12,6 +12,7 @@ import card3 from "../../assets/about/cards/Cards-03.png";
 import card4 from "../../assets/about/cards/Cards-04.png";
 import card5 from "../../assets/about/cards/Cards-05.png";
 import imageOne from "../../assets/about/bgf.png";
+import SimpleBackdrop from "../../components/SimpleBackDrop";
 
 const PeopleCard = ({ item }) => {
   let [hover, setHover] = useState(false);
@@ -38,6 +39,8 @@ const PeopleCard = ({ item }) => {
 
 export default function AboutPage() {
   return (
+    <>
+    <SimpleBackdrop/>
     <div className={styles.hero}>
       <div className={styles.aboutHero}>
         <div className={styles.heroImage}>
@@ -49,7 +52,7 @@ export default function AboutPage() {
           <img
             className={styles.imageOne}
             src={imageOne}
-          />
+            />
         </div>
         <div className={styles.meetupInfo}>
           <h1 className={styles.mainHeading}>Who We Are ?</h1>
@@ -79,8 +82,8 @@ export default function AboutPage() {
         </div>
         {list.map((item, index) => (
           <PeopleCard
-            item={item}
-            key={index}
+          item={item}
+          key={index}
           />
         ))}
       </div>
@@ -129,5 +132,6 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
+          </>
   );
 }
