@@ -11,7 +11,7 @@ export default function Services() {
         of in-house and sourced tech seamlessly integrates, enhancing audience
         engagement at your events.
       </p>
-      <div className={styles.slideWrapper}>
+      {/* <div className={styles.slideWrapper}>
         <div className={styles.slideContainer}>
           {services?.map((item, index) => (
             <div className={styles.paraContainer} key={index}>
@@ -26,7 +26,7 @@ export default function Services() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

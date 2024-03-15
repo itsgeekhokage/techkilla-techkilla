@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homePage/HomePage";
@@ -10,7 +12,7 @@ import PreLoader from "./components/home/preLoader/PreLoader";
 export default function App() {
   return (
     <>
-      <PreLoader/>
+      <PreLoader />
       <BrowserRouter>
         <Header />
         <Routes>

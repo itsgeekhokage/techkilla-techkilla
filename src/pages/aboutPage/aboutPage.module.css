@@ -153,6 +153,7 @@
 .peopleLove .peopleLoveItem .peopleLoveSectionIcon {
   width: 80px;
   height: 50px;
+  opacity: 1;
 }
 
 .peopleLove .peopleLoveItem .rightPeopleLoveItem {
@@ -177,8 +178,8 @@
   box-shadow: none;
 }
 
-.peopleLove .peopleLoveItem:hover .peopleLoveSectionIcon {
-  animation: rotateAndVanish 0.5s both;
+.peopleLoveItem:hover .peopleLoveSectionIcon {
+  animation: rotateAndVanish 0.8s both;
 }
 .imageMainContainer {
   width: 100vw;
@@ -224,17 +225,37 @@
 
 .imageMainContainer .spanContainer:hover .heading {
   opacity: 1;
-  transform: scale(1);
+  /* transform: scale(1); */
   animation: borderRadius 0.5s forwards;
   background-color: rgba(0, 0, 0, 0.712);
+}
+
+@keyframes rotateAndVanish {
+  from {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: rotate(180deg) scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
 }
 
 @keyframes borderRadius {
   from {
     border-radius: 50%;
+    transform: scale(0.2);
+  }
+  50% {
+    border-radius: 50%;
   }
   to {
     border-radius: 0%;
+    transform: scale(1);
   }
 }
 

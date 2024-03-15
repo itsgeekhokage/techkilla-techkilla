@@ -23,8 +23,9 @@ const PeopleCard = ({ item }) => {
       onMouseLeave={() => setHover(false)}>
       <span className={styles.peopleLoveSectionIcon}>
         <img
-          src={hover ? item.colorimg : item.blackimg}
+          src={hover ? item.colorimg  : item.blackimg }
           alt="peopleLoveSectionIcon"
+          loading="lazy"
         />
       </span>
       <div className={styles.rightPeopleLoveItem}>
@@ -49,7 +50,7 @@ export default function AboutPage() {
       </div>
       <div className={styles.aboutMainContent}>
         <div className={styles.imageDiv}>
-          <img
+          <img loading="lazy"
             className={styles.imageOne}
             src={imageOne}
             />
@@ -91,7 +92,7 @@ export default function AboutPage() {
         <div className={styles.imageMainContainer}>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src={card1} />
+              <img loading="lazy" src={card1} />
             </span>
             <span className={styles.heading}>
               <h1>Corporate Events</h1>
@@ -99,7 +100,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src={card4} />
+              <img loading="lazy" src={card4} />
             </span>
             <span className={styles.heading}>
               <h1>Experiential Events</h1>
@@ -107,7 +108,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src={card5} />
+              <img loading="lazy" src={card5} />
             </span>
             <span className={styles.heading}>
               <h1>Curate & Manage IP's</h1>
@@ -115,7 +116,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src={card3} />
+              <img loading="lazy" src={card3} />
             </span>
             <span className={styles.heading}>
               <h1>Virtual/Hybird Events</h1>
@@ -123,7 +124,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.spanContainer}>
             <span className={styles.imageSpan}>
-              <img src={card2} />
+              <img loading="lazy" src={card2} />
             </span>
             <span className={styles.heading}>
               <h1>Musical Tours</h1>
