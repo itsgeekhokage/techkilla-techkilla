@@ -6,7 +6,6 @@ import LogoSlider from "./LogoSlider/LogoSlider";
 import { whatWeDoArr } from "../../../data/home/WhatWeDo";
 
 export default function WhatWeDo() {
-
   return (
     <section className={styles.WhatWeDo}>
       <div className={styles.bgImage}></div>
@@ -23,7 +22,8 @@ export default function WhatWeDo() {
             {whatWeDoArr?.map((item, index) => (
               <div
                 key={index}
-                className={styles.singleCard}>
+                className={styles.singleCard}
+                data-aos="zoom-in-right">
                 <div className={styles.imgContainer}>
                   <img
                     src={item.img}

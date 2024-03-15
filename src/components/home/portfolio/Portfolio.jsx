@@ -47,8 +47,11 @@ export default function Portfolio() {
           {portfolio?.map((item, index) => (
             <div
               className={styles[item.class]}
-              key={index}>
-              <div className={styles.imgContainer} onClick={()=>handleProjectClick(item)}>
+              key={index}
+              data-aos="zoom-out-up">
+              <div
+                className={styles.imgContainer}
+                onClick={() => handleProjectClick(item)}>
                 <button
                   className={styles.navigationButton}
                   onClick={navigateLeft}>
