@@ -58,7 +58,7 @@
 
 .aboutMainContent .meetupInfo {
   width: 60%;
-  min-width: 450px;
+  min-width: 350px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
