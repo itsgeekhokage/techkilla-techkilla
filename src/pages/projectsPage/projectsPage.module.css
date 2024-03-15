@@ -11,6 +11,9 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  h2 {
+    font-size: 3rem;
+  }
 }
 
 .projectContainer {
@@ -22,8 +25,8 @@
 
 .imageContainer {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -54,8 +57,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  .ProjectsPage h2 {
+    font-size: 2.5rem;
+  }
   .imageContainer {
-    width: 150px;
-    height: 150px;
+    height: 300px;
   }
 }
